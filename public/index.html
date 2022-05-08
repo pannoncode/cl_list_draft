@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centerline Gépszámok - Géprészek</title>
+  <style>
+    .inputs {
+      margin-top: 20px;
+    }
+    
+    .add {
+      border: 1px solid black;
+      padding: .2rem;
+      color: red;
+      background-color: rgb(214, 200, 200);
+      font-weight: bold;
+      margin-top: 2px;
+      display: block;
+      width: 100px;
+    }
+    
+    .parts {
+      width: 300px;
+    }
+    
+    .row {
+      display: flex;
+    }
+    
+    .cell {
+      width: 400px;
+      border: 1px solid #383838;
+      padding: .5rem;
+      text-align: center;
+    }
+    
+    .header {
+      background-color: grey;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Centerline bevitel</h1>
+  <div id="content">
+    <div class="inputs">
+      <div>Gépszám</div>
+      <input type="text" class="parts" name="machineName" id="machineName">
+    </div>
+
+    <div class="inputs">
+      <div>Géprész</div>
+      <input type="text" class="parts" name="machineParts" id="machineParts">
+    </div>
+
+    <div class="inputs">
+      <div>Centerline neve</div>
+      <input type="text" class="parts" name="cl_name" id="cl_name">
+    </div>
+
+    <div class="inputs">
+      <div>Centerline értéke</div>
+      <input type="number" class="parts" name="value" id="value">
+    </div>
+
+    <div class="inputs">
+      <div>Centerline érték mértékegysége</div>
+      <input type="text" class="parts" name="measure" id="measure">
+    </div>
+
+    <div class="inputs">
+      <div>OPL száma</div>
+      <input type="text" class="parts" name="opl" id="opl">
+    </div>
+
+    <div class="inputs">
+      <div>Ellenőrzés frekvenciája</div>
+      <input type="text" class="parts" name="freq" id="freq">
+    </div>
+
+  </div>
+  <div class="inputs">
+    <button id="save">Mentés</button>
+  </div>
+  <div class="title">
+    <h1>Centerline lista</h1>
+  </div>
+  <div>
+    <button id="cllists">Centerline lista</button>
+  </div>
+  <div id="cl_list"></div>
+
+
+
+
+  <script src="js/ajax.js"></script>
+</body>
+
+</html>
